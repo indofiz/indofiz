@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Papato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+        <div class="main">
+            <!-- HEADER -->
+            <div class="header">
+                <div class="logo">
+                    <img src="logo.png" alt="" class="logo-img">
+                </div>
+                <div class="nav">
+                    <span><a href="#">Instagram</a></span>
+                    <span><a href="#">Shopee</a></span>
+                    <span><a href="#">TokoPedia</a></span>
+                    <span><a href="#">Facebook</a></span>
+                </div>
+            </div>
+
+            <div id="order">
+                <div class="order">
+                    <span class="title"><span>ORDER PAPATO</span></span>
+                    <div class="form">
+                        <label for="provinsi">Provinsi:</label>
+                        <div include="form-input-select()">
+                            <select required>
+                              <option value="" hidden>-- Pilih Provinsi --</option>
+                              <!-- normal options -->
+                              <option value="1">Option 1</option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                              <option value="4">Option 4</option>
+                              <option value="5">Option 5</option>
+                            </select>
+                          </div>
+                        <label for="kabupaten_kota">Kabupaten / Kota:</label>
+                        <div include="form-input-select()">
+                            <select required>
+                              <option value="" hidden>-- Pilih Kabupaten/Kota --</option>
+                              <!-- normal options -->
+                              <option value="1">Option 1</option>
+                              <option value="2">Option 2</option>
+                              <option value="3">Option 3</option>
+                              <option value="4">Option 4</option>
+                              <option value="5">Option 5</option>
+                            </select>
+                        </div>
+
+                        <label for="alamat">Alamat Lengkap:</label>
+                        <textarea name="alamat" id="alamat" rows="5"></textarea>
+                        <button class="submit_order">ORDER</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
